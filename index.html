@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1b936032fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Nishant</span><br>From India</h1>
+                    </div>
+        </div>
+        </div>
+        <body>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMG_6941.PNG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <h2 class="sub-title-2">A Student & Web Developer</h2>
+                <p>Hello guys, Myself Nishant, a 3rd Year student of B.Tech in Computer Science.<br>
+                    I was born and raised in Charkhi Dadri.
+                    I'm a dedicated front end developer with a good knowledge of html,
+                    CSS , java and a little bit of js.react. 
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces </li>
+                        <li><span>Languages</span><br>C,C++ Basics, JAVA . </li>
+                        <li><span>Web Development</span><br>Front End Development </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Project</span><br>basic project of react js. </li>
+                        <li><span>Workshop</span><br>Attended the workshop of building Entrepreneurship qualities<br>Attended the bootcamp of Frontend Development </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BTech.(CSE)</span><br>3rd year student of Btech CSE at Guru Jambheshwar University Of Science And Technology (Hisar) </li>
+                        <li><span>12th</span><br>Aryans Model School<br>board (CBSE) 89.4% </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+<div id="services">
+    <div class="container">
+<h1 class="sub-title">My Services</h1>
+<div class="services-list">
+    <div>
+        <h2>Web Development</h2>
+        <p>Service of Front End Development is provided using html and CSS.</p>
+        <a href="#">Learn more</a>
+    </div>
+     <div>
+        <h2>Languages</h2>
+        <p>Languages regarding problems in C, C++, JAVA.</p>
+        <a href="#">Learn more</a>
+    </div>
+
+</div>
+</div> 
+</div> 
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pexels-elti-meshau-333850.jpg">
+                <div class="layer">
+                    <h3>Web Developer</h3><br><p>Having a experience  of front end development also made a project for the same.</p>
+                    
+                </div>
+            </div>
+            <div class="work-title">
+            <div class="work">
+                <img src="wallpaperflare.com_wallpaper.jpg">
+                 <div class="layer">
+                    <h3>Project Management Tools</h3>
+        
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+           
+                <h1 class="contact-left1">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> nikks7015@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 7015710705</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                     <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                     </div>
+                     <a href="Nishant - Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email" name="email" placeholder="Your Email" required>
+                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+                </div>
+             </div>
+             <div class="copyright">
+                <p> Copyright @ Nishant.</p>
+             </div>
+        </div>
+    
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzR4s0sT0gBnFHVziJkoHuMSTwaGLtDRSve4CVyg6eZd7ZPsCnCscYcu5s-cnWz0tki/exec+'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>   
+</body>
+</html>
